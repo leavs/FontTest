@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
         qDebug() << "Set simhei font";
     }else{                          // second way: put fonts in system fonts directory.
         QFont font;
-        font.setPointSize(50);
+        font.setPointSize(30);
         // *.ttf need be putted in /usr/lib/fonts directory. the *.ttf file can be got from windows (%windir%\fonts)
         // after you putted the fonts file, push "Debug" can get the font name from qDebug output.
         // then you can use the Name in follow codes. such as:
@@ -45,6 +45,7 @@ int main(int argc, char *argv[])
 
     MainWindow w;
     w.show();
+    w.showFullScreen();
 
     return a.exec();
 }

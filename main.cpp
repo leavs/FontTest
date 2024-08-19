@@ -1,6 +1,10 @@
 #include "mainwindow.h"
 #include <QApplication>
+#if QT_VERSION >= QT_VERSION_CHECK(6,0,0)
+#include <QtCore5Compat/QTextCodec>
+#else
 #include <QTextCodec>
+#endif
 #include <QDebug>
 #include <QFontDatabase>
 
